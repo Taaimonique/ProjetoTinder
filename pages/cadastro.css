@@ -1,0 +1,80 @@
+ .pagina-cadastro {
+  background: linear-gradient(135deg, #582532, #ff4b2b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.pagina-cadastro .container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+.pagina-cadastro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.pagina-cadastro input[type="text"],
+.pagina-cadastro input[type="email"],
+.pagina-cadastro input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.pagina-cadastro button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #2b5876;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagina-cadastro button:hover {
+  background-color: #7589b7;
+}
+
+.pagina-cadastro p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.pagina-cadastro a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.rodape {
+  background-color: #d63535;
+  color: #eed6d6;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
