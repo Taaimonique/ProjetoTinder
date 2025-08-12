@@ -1,22 +1,21 @@
-/* Reset básico e estrutura geral */
+
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 body {
-  padding-top: 80px; /* Espaço para o header fixo */
+  padding-top: 40px;
   flex: 1;
   color: #ffffff;
 }
 
-/* Página de Login */
 .pagina-login {
-  background: linear-gradient(135deg, #2a0000, #721f13);
+  background: linear-gradient(135deg, #f10505, #460103);
   flex: 1;
   display: flex;
   justify-content: center;
@@ -25,51 +24,51 @@ body {
 }
 
 .pagina-login .container {
-  background-color: #3c0805;
+  background-color: #480704;
   padding: 2.5rem;
-  border-radius:40px;
-  box-shadow: 0 10px 50px rgba(121, 43, 43, 0.2);
+  border-radius:20px;
+   box-shadow: 0 0 20px 1px rgba(124, 85, 14, 0.7); 
   text-align: center;
   width: 100%;
-  max-width: 300px;
-  backdrop-filter: blur(0px);
+  max-width: 250px;
+  backdrop-filter: blur(5px);
 }
 
 .pagina-login h1 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #FAA307;
 }
 
 .pagina-login h2 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #FAA307;
 }
 
 .pagina-login input[type="email"],
 .pagina-login input[type="password"] {
-  width: 100%;
+  width:100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: none;
+  border:none;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(102, 13, 8, 0.9);
   font-size: 1rem;
   transition: box-shadow 0.3s ease;
 }
 
 .pagina-login input[type="email"]:focus,
 .pagina-login input[type="password"]:focus {
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(219, 104, 9, 0.8);
   outline: none;
 }
 
 .pagina-login button {
-  width: 100%;
+  width: 80%;
   padding: 0.75rem;
-  background-color: #fff;
-  color: #4d0e0edd;
+  background-color: #f69f2d;
+  color: #3f0606dd;
   font-weight: bold;
   border: none;
   border-radius: 10px;
@@ -78,7 +77,7 @@ body {
 }
 
 .pagina-login button:hover {
-  background-color: #f1d2da;
+  background-color: #f19d17;
 }
 
 .pagina-login p {
@@ -87,53 +86,25 @@ body {
 }
 
 .pagina-login a {
-  color: #ffffff;
+  color: #F48C06;
   font-weight: bold;
   text-decoration: underline;
   transition: color 0.3s;
 }
 
 .pagina-login a:hover {
-  color:#4e0f09;
+  color: #4e0f09;
 }
 
-/* Header */
 .site-header {
-  background: linear-gradient(135deg, #60170e);
-  color: white;
-  padding: 10px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(166, 132, 132, 0.1);
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
-}
-
-.site-header .logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.site-header .menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.site-header .menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.site-header .menu a:hover {
-  color: #000000;
+  z-index: 00;
 }
 
 .rodape {
@@ -145,22 +116,38 @@ body {
   margin-top: auto;
 }
 
-/* Responsivo */
+
 @media (max-width: 480px) {
   .pagina-login .container {
     padding: 1.5rem;
   }
 
-  .site-header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    text-align: center;
-  }
+}
+.pagina-login-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
 
-  .site-header .menu ul {
+.img-lado {
+  max-width: 600px;
+  height: auto;
+}@media (max-width: 600px) {
+  .pagina-login-conteudo {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
+}
+ul {
+    display: flex;
+    list-style: none; 
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    color: #ba2d2d;
 }

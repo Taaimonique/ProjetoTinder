@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="login.css">
+ <link rel="stylesheet" href="login.css">
 </head>
 <body class="pagina-login">
-    <header class="site-header">
-    <div class="logo">Love Match </math></div>
-    <nav class="menu">
+  <header class="site-header">
+    <nav>
       <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="cadastro.html">Cadastre-se</a></li>
         <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
         
       </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>Bem-vindo(a) ao Love Match</h1>
-    <h2>Login</h2>
-    <form id="form-login">
-      <input type="email" placeholder="E-mail" required><br><br>
-      <input type="password" placeholder="Senha" required><br><br>
-      <button type="submit">Entrar</button>
-    </form>
-    <p><a href="redefinirsenha.html">Esqueci minha senha</a></p>
-    <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+  <div class="pagina-login-conteudo">
+    <img src="minhaimagem.png" alt="Minha imagem" class="img-lado">
+    <div class="container">
+      <div class="form-login">
+        <h1>Bem-vindo(a)</h1>
+        <h2>LOGIN</h2>
+        <form id="form-login">
+          <input type="email" placeholder="E-mail" required><br><br>
+          <input type="password" placeholder="Senha" required><br><br>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
   </div>
+</body>
 
   <script src="js/script.js" defer></script>
 </body>

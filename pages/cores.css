@@ -1,0 +1,16 @@
+
+:root {
+  /* Tons escuros */
+  --cor-azul-escuro: #03071E;
+  --cor-vinho-escuro: #370617;
+  --cor-vermelho-queimado: #6A040F;
+  --cor-vermelho-intenso: #9D0208;
+  --cor-vermelho-vivo: #D00000;
+
+  /* Tons quentes */
+  --cor-laranja-queimado: #DC2F02;
+  --cor-laranja-medio: #E85D04;
+  --cor-laranja-vibrante: #F48C06;
+  --cor-dourado-alaranjado: #FAA307;
+  --cor-dourado-claro: #FFBA08;
+}
